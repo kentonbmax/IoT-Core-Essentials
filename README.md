@@ -12,7 +12,7 @@ Windows 10 IoT Core essentials. Run on device or as monitoring server.
     1. Sends message to your Device Hub connection per the connection string and interval in config.json
 
 ## Setup
-1. Install nodejs (Chakra) on Windows 10, follow steps 3 and 4 (Installing Node Js)https://developer.ibm.com/recipes/tutorials/connecting-raspberry-pi-with-windows-iot-core-as-a-device-to-watson-iot-using-node-red/
+1. Install nodejs (Chakra) on Windows 10, follow steps 3 and 4 [Installing Node Js](https://developer.ibm.com/recipes/tutorials/connecting-raspberry-pi-with-windows-iot-core-as-a-device-to-watson-iot-using-node-red/)
 1. Grab your IoT device connection string
 1. Grab your device ip address from 
 1. Request IoT systemperf, make the performance request using your device Ip address in chrome and note the basic auth token or setup ssh to your device.
