@@ -1,0 +1,18 @@
+{
+    "connection": {
+        "azure": "<azure connection string>"
+    },
+    "logPath": "c:\\temp\\log.txt",
+    "interval": 30000,
+    "endpoints": [{
+        "id": "001_performance",
+        "options": {
+            "uri": "http://<device ip or localhost>/api/resourcemanager/systemperf",
+            "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Basic <token>"
+            },
+            "json": true
+        }
+    }]
+}
