@@ -18,5 +18,5 @@
 1. Grab your device ip address from 
 1. Request IoT systemperf, make the performance request using your device Ip address in chrome and note the basic auth token or setup ssh to your device.
 1. Update your config.json with this info
-1. run: `npm install`. For IoT Core device using Powershell: `cd c:\node` then './node.exe cli.js install <path to IoT-Core-Essentials>
+1. run: `npm install`. For IoT Core device using Powershell: `cd c:\node` then './node.exe cli.js install [path to IoT-Core-Essentials]`
 1. run: `npm run watch` or `build` to compile
