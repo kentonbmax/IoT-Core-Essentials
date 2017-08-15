@@ -2,10 +2,10 @@ const CONFIG = require('../config.json')
 
 import * as requestWrapper from './requestWrapper'
 import {IFileAppender} from './fileAppender'
-import {Message} from 'azure-iot-device'
-var clientFromConnectionString = require('azure-iot-device-mqtt').clientFromConnectionString
+import {Message, Client} from 'azure-iot-device'
+import {Mqtt} from 'azure-iot-device-mqtt'
 
-var client = clientFromConnectionString(CONFIG.connection.azure)
+var client = Client.fromConnectionString(CONFIG.connection.azure, Mqtt)
 
 export class Device {
     readonly endpoint: any
@@ -27,7 +27,7 @@ export class Device {
 
     private connect(): Promise<any> {
         return new Promise(function(resolve, reject) {
-            client.open(function(err:string){
+            client.open(function(err:any){
                 if (err) {
                     console.log('Could not connect: ' + err)
                     reject(err)
