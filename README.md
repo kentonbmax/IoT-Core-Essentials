@@ -19,9 +19,9 @@
 1. Run: `npm start` to run service. 
 
 ## IoT Core Device Setup
-> Requires understanding of ftp to IoT device (FTP)[https://developer.microsoft.com/en-us/windows/iot/docs/ftp]
-> Requires understanding of Windows 10 IoT Core Dashboard.
-> Requires completion of Service Setup
+> 1. Requires understanding of ftp to IoT device [FTP](https://developer.microsoft.com/en-us/windows/iot/docs/ftp)
+> 1. Requires understanding of Windows 10 IoT Core Dashboard.
+> 1. Requires completion of Service Setup
 
 1. Install nodejs (Chakra) on Windows 10, follow steps 3 and 4 [Installing Node Js](https://developer.ibm.com/recipes/tutorials/connecting-raspberry-pi-with-windows-iot-core-as-a-device-to-watson-iot-using-node-red/)
 1. Grab your IoT device connection string
