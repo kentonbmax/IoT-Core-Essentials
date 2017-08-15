@@ -12,11 +12,22 @@
   1. Logs message to flat file
   1. Sends message to your Device Hub connection per the connection string and interval in config.json
 
-## Setup
+## Service Setup
+1. Clone this repo locally
+1. Run: `npm install`
+1. Run: `npm run build` to build js from typescript
+1. Run: `npm start` to run service. 
+
+## IoT Core Device Setup
+> Requires understanding of ftp to IoT device (FTP)[https://developer.microsoft.com/en-us/windows/iot/docs/ftp]
+> Requires understanding of Windows 10 IoT Core Dashboard.
+> Requires completion of Service Setup
+
 1. Install nodejs (Chakra) on Windows 10, follow steps 3 and 4 [Installing Node Js](https://developer.ibm.com/recipes/tutorials/connecting-raspberry-pi-with-windows-iot-core-as-a-device-to-watson-iot-using-node-red/)
 1. Grab your IoT device connection string
 1. Grab your device ip address from 
 1. Request IoT systemperf, make the performance request using your device Ip address in chrome and note the basic auth token or setup ssh to your device.
 1. Update your config.json with this info
-1. run: `npm install`. For IoT Core device using Powershell: `cd c:\node` then './node.exe cli.js install [path to IoT-Core-Essentials]`
-1. run: `npm run watch` or `build` to compile
+1. Copy working directory contents to c:\IoT\ESS
+1. Device Powershell: `cd c:\node` then `./node.exe cli.js install c:\IoT\ESS`
+1. Powershell: `cd c:\IoT\ESS` then `c:\node\node.exe c:\node\cli.js start`
