@@ -23,7 +23,7 @@
 > 1. Requires understanding of Windows 10 IoT Core Dashboard.
 > 1. Requires completion of Service Setup
 
-1. Install nodejs (Chakra) on Windows 10, follow steps 3 and 4 [Installing Node Js](https://developer.ibm.com/recipes/tutorials/connecting-raspberry-pi-with-windows-iot-core-as-a-device-to-watson-iot-using-node-red/)
+1. Install nodejs (Chakra) on Windows 10 IoT [Installing Node Js](https://audministrator.wordpress.com/2018/01/15/windows-core-iot-nodejs-on-a-raspberry-pi3/)
 1. Grab your IoT device connection string
 1. Grab your device ip address from 
 1. Request IoT systemperf, make the performance request using your device Ip address in chrome and note the basic auth token or setup ssh to your device.
