@@ -30,4 +30,4 @@
 1. Update your config.json with this info
 1. Copy working directory contents to c:\IoT\ESS
 1. Device Powershell: `cd c:\node` then `./node.exe cli.js install c:\IoT\ESS`
-1. Powershell: `cd c:\IoT\ESS` then `c:\node\node.exe c:\node\cli.js start`
+1. Device Powershell: `cd c:\IoT\ESS` then `c:\node\node.exe c:\node\cli.js start`
